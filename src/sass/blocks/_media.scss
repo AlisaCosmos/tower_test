@@ -1,0 +1,39 @@
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .blocks {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 300px);
+            grid-template-rows: 100px;
+            justify-content: space-around;
+            row-gap: 50px;
+
+            div:first-child,
+            div:last-child {
+                grid-column: unset;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
